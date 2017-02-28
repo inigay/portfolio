@@ -1,0 +1,12 @@
+#left-nav
+{
+    width:220px;
+    height:100%;
+    background:#000;
+    opacity:0.9;
+    position:fixed;
+    top:0;
+    -webkit-box-shadow: 1px 0px 11px 4px rgba(0,0,0,0.7);
+    -moz-box-shadow: 1px 0px 11px 4px rgba(0,0,0,0.7);
+    box-shadow: 1px 0px 11px 4px rgba(0,0,0,0.7);
+}
