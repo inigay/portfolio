@@ -9,6 +9,8 @@ import { HttpModule } from '@angular/http';
 import { HomeComponent } from './home/home.component';
 import {LeftNavigationComponent} from './shared/navigation.component';
 import {TopNavigationComponent} from './shared/top-navigation.component';
+import { RepoListComponent } from './components/repo-list.component';
+import { RepoItemComponent } from './components/repo-item.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 @NgModule({
@@ -16,7 +18,9 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
     AppComponent,
     HomeComponent,
     LeftNavigationComponent,
-    TopNavigationComponent
+    TopNavigationComponent,
+    RepoListComponent,
+    RepoItemComponent
   ],
   imports: [
     BrowserModule,

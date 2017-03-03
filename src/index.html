@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Igor Nigay|Portfolio</title>
     <base href="/">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    
   </head>
   <body>
 
@@ -20,7 +24,7 @@
         var particles = [];
 
         // The amount of particles to render
-        var particleCount = 30;
+        var particleCount = 20;
 
         // The maximum velocity in each direction
         var maxVelocity = 2;
@@ -163,7 +167,7 @@
         function draw() {
             // Clear the drawing surface and fill it with a black background
             context.fillStyle = "rgba(0, 0, 0, 1)";
-            context.fillRect(0, 0, 400, 400);
+            context.fillRect(0, 0, 300, 300);
 
             // Go through all of the particles and draw them.
             particles.forEach(function(particle) {

@@ -1,0 +1,18 @@
+#repo-list
+{
+    width:100%;
+    min-height:200px;
+    position: relative;
+    padding-top:5px;
+}
+
+#repo-list:before
+{
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\F09B";
+    position: absolute;
+    right: 16px;
+    font-size: 20px;
+    color: #0595d1;
+    top: 9px;
+}

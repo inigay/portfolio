@@ -5,22 +5,27 @@ html{
 
 body, html{
     width: 100%;
-    height: 100%;
-
+    min-height: 100%;
     display: flex;
     flex-direction: column;
-    
     justify-content: flex-start; /* align items in Main Axis */
     align-items: stretch; /* align items in Cross Axis */
     align-content: stretch;
     display:flex;
     margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+p::selection, div::selection {
+  background: #63c5fe; /* WebKit/Blink Browsers */
+  color:#fff;
 }
 
 app{
     flex: 1;
     z-index:2;
     opacity:1;
+    display:flex;
 }
 
 app:before{
@@ -35,6 +40,8 @@ app:before{
     z-index:-1;
     position: fixed;
     top:0;
+    -webkit-filter: blur(1px);
+    
 }
 
 #canvas
@@ -44,27 +51,58 @@ app:before{
     height:100%!important;
     position:fixed;
     top:0;
-    opacity:0.6;
+    opacity:0.7;
     z-index:1;
 }
 
+#main-container
+{
+    display:flex;
+    flex-direction: row;
+}
+
+.main-container-item
+{
+    flex-grow: 1;
+}
+
+.left-nav
+{
+    width:220px;
+    display:flex;
+    flex-direction:column;
+}
+
+
 .card
 {
-    background:#1f1f1f;
-    opacity:0.8;
+    background:rgba(31,31,31,0.7);
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-
-
-    width:400px;
-    height:1200px;
 }
 
 .card .card-heading
 {
     padding:10px;
-    background: linear-gradient(125deg, rgba(0,162,255,0.7) -50%,rgba(125,185,232,0) 100%);
-    opacity:1;
-    color:#8ed6ff;
+    padding-left:25px;
+    background: linear-gradient(125deg, rgba(0,162,255,0.3) 0,rgba(125,185,232,0) 100%);
+    color:#63c5fe;
+    font-size:20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.card .card-body
+{
+    padding:25px;
+    height:300px;
+}
+
+.card .card-body p
+{
+    color: #c9c9c9;
+    font-size:13px;
+    margin:0;
+    margin-top:15px;
+    opacity:0.6;
 }

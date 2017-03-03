@@ -1,10 +1,26 @@
 #main
 {
-
-    padding-left:250px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    padding:30px;
+    flex-wrap: wrap;
 }
 
 .main-frame
 {
-    padding:30px;
+    width:50%;
+}
+
+.repo-container
+{
+    width:35%;
+    max-width:400px
+}
+
+.weather-container
+{
+    width:91%;
+    height:300px;
+    margin-top:70px;
 }
