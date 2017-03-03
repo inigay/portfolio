@@ -15,7 +15,7 @@ export class RepoListComponent implements OnInit {
         new RepoItem("inigay/proto", "https://github.com/inigay/proto"),
         new RepoItem("inigay/csv_difference", "https://github.com/inigay/csv_difference", "Calculates Difference of the files"),
         new RepoItem("inigay/chat", "https://github.com/inigay/chat", "real time chat application"),
-        new RepoItem("inigay/labroots", "https://github.com/inigay/labroots", "")
+        new RepoItem("inigay/labroots", "https://github.com/inigay/labroots", "Converts Numbers to Words, and Finds sum of common factors")
     ];
 
     constructor() { }

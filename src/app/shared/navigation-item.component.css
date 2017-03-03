@@ -1,0 +1,44 @@
+.navigation-item
+{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    padding: 15px 10px;
+    cursor: pointer;
+    background: linear-gradient(125deg, rgba(0,162,255,0.3) 0,rgba(125,185,232,0) 100%);
+    background-position-x:-220px;
+    background-repeat: no-repeat;
+
+}
+
+@keyframes animatedBackground {
+	from { background-position-x: -220px; }
+	to { background-position-x: 0; }
+}
+
+.navigation-item:hover
+{
+    animation: animatedBackground 0.2s ease-in-out forwards;
+}
+
+.navigation-item .navigation-item-icon
+{
+    max-width:50px;
+    width:100%;
+    color:#7a7a7a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:26px;
+}
+
+.navigation-item .navigation-item-heading
+{
+    flex-grow:1;
+    font-size:14px;
+    text-transform: uppercase;
+    font-weight:500;
+    color:#7a7a7a;
+    align-self:center;
+    margin-left:10px;
+}

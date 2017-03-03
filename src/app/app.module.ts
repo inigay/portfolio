@@ -11,6 +11,7 @@ import {LeftNavigationComponent} from './shared/navigation.component';
 import {TopNavigationComponent} from './shared/top-navigation.component';
 import { RepoListComponent } from './components/repo-list.component';
 import { RepoItemComponent } from './components/repo-item.component';
+import { NavigationItemComponent } from './shared/navigation-item.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 @NgModule({
@@ -20,7 +21,8 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
     LeftNavigationComponent,
     TopNavigationComponent,
     RepoListComponent,
-    RepoItemComponent
+    RepoItemComponent,
+    NavigationItemComponent
   ],
   imports: [
     BrowserModule,
