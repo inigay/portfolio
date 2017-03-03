@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 
 @Component({
     //moduleId: module.id,
@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./repo-item.component.css']
 })
 export class RepoItemComponent implements OnInit {
+
+    @Input() repoName;
+    @Input() repoLink;
+    @Input() repoDesc;
+    @Input() starCount;
+    @Input() forkCount;
+
     constructor() { }
 
     ngOnInit() { }

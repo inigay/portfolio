@@ -1,8 +1,11 @@
 <div id="repo-list">
-    <repo-item></repo-item>
-    <repo-item></repo-item>
-    <repo-item></repo-item>
-    <repo-item></repo-item>
-    <repo-item></repo-item>
-    <repo-item></repo-item>
+    <div *ngFor="let item of list">
+        <repo-item 
+            [repoName]="item.repoName"
+            [repoLink] = "item.repoLink"
+            [repoDesc] ="item.repoDesc"
+            [forkCount] = "item.forkCount"
+            [starCount] = "item.starCount" >
+        </repo-item>
+    </div>
 </div>
